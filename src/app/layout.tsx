@@ -1,7 +1,7 @@
-import Navbar from '@/components/nav-bar'
 import './globals.css'
 
-import LightRays from '@/components/ui/ligh-rays'
+import Navbar from '@/components/nav-bar'
+import LightRays from '@/components/ui/light-rays'
 import type { Metadata } from 'next'
 import { Martian_Mono, Schibsted_Grotesk } from 'next/font/google'
 
@@ -30,20 +30,21 @@ export default function RootLayout({
 			<body
 				className={`${schibstedGrotesk.variable} ${martianMono.variable} min-h-screen antialiased`}
 			>
-				<div className="absolute inset-0 top-0 z-[-1]">
+				<Navbar />
+
+				<div className="absolute inset-0 top-0 z-[-1] min-h-screen">
 					<LightRays
 						raysOrigin="top-center-offset"
-						raysColor="#59deca"
-						raysSpeed={1.5}
-						lightSpread={0.8}
-						rayLength={1.2}
+						raysColor="#5dfeca"
+						raysSpeed={0.5}
+						lightSpread={0.9}
+						rayLength={1.4}
 						followMouse={true}
-						mouseInfluence={0.1}
-						noiseAmount={0.1}
-						distortion={0.05}
+						mouseInfluence={0.02}
+						noiseAmount={0.0}
+						distortion={0.01}
 					/>
 				</div>
-				<Navbar />
 				<main>{children}</main>
 			</body>
 		</html>
