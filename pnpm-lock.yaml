@@ -23,6 +23,12 @@ importers:
       ogl:
         specifier: ^1.0.11
         version: 1.0.11
+      posthog-js:
+        specifier: ^1.313.0
+        version: 1.313.0
+      posthog-node:
+        specifier: ^5.18.1
+        version: 5.18.1
       react:
         specifier: 19.2.3
         version: 19.2.3
@@ -342,6 +348,9 @@ packages:
     cpu: [x64]
     os: [win32]
 
+  '@posthog/core@1.9.0':
+    resolution: {integrity: sha512-j7KSWxJTUtNyKynLt/p0hfip/3I46dWU2dk+pt7dKRoz2l5CYueHuHK4EO7Wlgno5yo1HO4sc4s30MXMTICHJw==}
+
   '@swc/helpers@0.5.15':
     resolution: {integrity: sha512-JQ5TuMi45Owi4/BIMAJBoSQoOJu12oOk/gADqlcUL9JEdHB8vyjUSsxqeNXnmXHjYKMi2WcYtezGEEhqUI/E2g==}
 
@@ -467,6 +476,13 @@ packages:
     resolution: {integrity: sha512-eYm0QWBtUrBWZWG0d386OGAw16Z995PiOVo2B7bjWSbHedGl5e0ZWaq65kOGgUSNesEIDkB9ISbTg/JK9dhCZA==}
     engines: {node: '>=6'}
 
+  core-js@3.47.0:
+    resolution: {integrity: sha512-c3Q2VVkGAUyupsjRnaNX6u8Dq2vAdzm9iuPj5FW0fRxzlxgq9Q39MDq10IvmQSpLgHQNyQzQmOo6bgGHmH3NNg==}
+
+  cross-spawn@7.0.6:
+    resolution: {integrity: sha512-uV2QOWP2nWzsy2aMp8aRibhi9dlzF5Hgh5SHaB9OiTGEyDTiJJyx0uy51QXdyWbtAHNua4XJzUKca3OzKUd3vA==}
+    engines: {node: '>= 8'}
+
   csstype@3.2.3:
     resolution: {integrity: sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==}
 
@@ -478,8 +494,14 @@ packages:
     resolution: {integrity: sha512-LgQMM4WXU3QI+SYgEc2liRgznaD5ojbmY3sb8LxyguVkIg5FxdpTkvk72te2R38/TGKxH634oLxXRGY6d7AP+Q==}
     engines: {node: '>=10.13.0'}
 
+  fflate@0.4.8:
+    resolution: {integrity: sha512-FJqqoDBR00Mdj9ppamLa/Y7vxm+PRmNWA67N846RvsoYVMKB4q3y/de5PA7gUmRMYK/8CMz2GDZQmCRN1wBcWA==}
+
   graceful-fs@4.2.11:
     resolution: {integrity: sha512-RbJ5/jmFcNNCcDV5o9eTnBLJ/HszWV0P73bc+Ff4nS/rJj+YaS6IGyiOL0VoBYX+l1Wrl3k63h/KrH+nhJ0XvQ==}
+
+  isexe@2.0.0:
+    resolution: {integrity: sha512-RHxMLp9lnKHGHRng9QFhRCMbYAcVpn69smSGcq3f36xjgVVWThj4qqLbTLlq7Ssj8B+fIQ1EuCEGI2lKsyQeIw==}
 
   jiti@2.6.1:
     resolution: {integrity: sha512-ekilCSN1jwRvIbgeg/57YFh8qQDNbwDb9xT/qu2DAHbFFZUicIl4ygVaAvzveMhMVr3LnpSKTNnwt8PoOfmKhQ==}
@@ -592,6 +614,10 @@ packages:
   ogl@1.0.11:
     resolution: {integrity: sha512-kUpC154AFfxi16pmZUK4jk3J+8zxwTWGPo03EoYA8QPbzikHoaC82n6pNTbd+oEaJonaE8aPWBlX7ad9zrqLsA==}
 
+  path-key@3.1.1:
+    resolution: {integrity: sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==}
+    engines: {node: '>=8'}
+
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
 
@@ -602,6 +628,16 @@ packages:
   postcss@8.5.6:
     resolution: {integrity: sha512-3Ybi1tAuwAP9s0r1UQ2J4n5Y0G05bJkpUIO0/bI9MhwmD70S5aTWbXGBwxHrelT+XM1k6dM0pk+SwNkpTRN7Pg==}
     engines: {node: ^10 || ^12 || >=14}
+
+  posthog-js@1.313.0:
+    resolution: {integrity: sha512-CL8RkC7m9BTZrix86w0fdnSCVqC/gxrfs6c4Wfkz/CldFD7f2912S2KqnWFmwRVDGIwm9IR82YhublQ88gdDKw==}
+
+  posthog-node@5.18.1:
+    resolution: {integrity: sha512-Hi7cRqAlvuEitdiurXJFdMip+BxcwYoX66at5RErMVP91V+Ph9BspGiawC3mJx/4znjwUjF29kAhf8oZQ2uJ5Q==}
+    engines: {node: '>=20'}
+
+  preact@10.28.1:
+    resolution: {integrity: sha512-u1/ixq/lVQI0CakKNvLDEcW5zfCjUQfZdK9qqWuIJtsezuyG6pk9TWj75GMuI/EzRSZB/VAE43sNWWZfiy8psw==}
 
   react-dom@19.2.3:
     resolution: {integrity: sha512-yELu4WmLPw5Mr/lmeEpox5rw3RETacE++JgHqQzd2dg+YbJuat3jH4ingc+WPZhxaoFzdv9y33G+F7Nl5O0GBg==}
@@ -623,6 +659,14 @@ packages:
   sharp@0.34.5:
     resolution: {integrity: sha512-Ou9I5Ft9WNcCbXrU9cMgPBcCK8LiwLqcbywW3t4oDV37n1pzpuNLsYiAV8eODnjbtQlSDwZ2cUEeQz4E54Hltg==}
     engines: {node: ^18.17.0 || ^20.3.0 || >=21.0.0}
+
+  shebang-command@2.0.0:
+    resolution: {integrity: sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==}
+    engines: {node: '>=8'}
+
+  shebang-regex@3.0.0:
+    resolution: {integrity: sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==}
+    engines: {node: '>=8'}
 
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
@@ -664,6 +708,14 @@ packages:
 
   undici-types@6.21.0:
     resolution: {integrity: sha512-iwDZqg0QAGrg9Rav5H4n0M64c3mkR59cJ6wQp+7C4nI0gsmExaedaYLNO44eT4AtBBwjbTiGPMlt2Md0T9H9JQ==}
+
+  web-vitals@4.2.4:
+    resolution: {integrity: sha512-r4DIlprAGwJ7YM11VZp4R884m0Vmgr6EAKe3P+kO0PPj3Unqyvv59rczf6UiGcb9Z8QxZVcqKNwv/g0WNdWwsw==}
+
+  which@2.0.2:
+    resolution: {integrity: sha512-BLI3Tl1TW3Pvl70l3yq3Y64i+awpwXqsGBYWkkqMtnbXgrMD+yj7rhW0kuEDxzJaYXGjEW5ogapKNMEKNMjibA==}
+    engines: {node: '>= 8'}
+    hasBin: true
 
 snapshots:
 
@@ -860,6 +912,10 @@ snapshots:
   '@next/swc-win32-x64-msvc@16.1.1':
     optional: true
 
+  '@posthog/core@1.9.0':
+    dependencies:
+      cross-spawn: 7.0.6
+
   '@swc/helpers@0.5.15':
     dependencies:
       tslib: 2.8.1
@@ -963,6 +1019,14 @@ snapshots:
 
   clsx@2.1.1: {}
 
+  core-js@3.47.0: {}
+
+  cross-spawn@7.0.6:
+    dependencies:
+      path-key: 3.1.1
+      shebang-command: 2.0.0
+      which: 2.0.2
+
   csstype@3.2.3: {}
 
   detect-libc@2.1.2: {}
@@ -972,7 +1036,11 @@ snapshots:
       graceful-fs: 4.2.11
       tapable: 2.3.0
 
+  fflate@0.4.8: {}
+
   graceful-fs@4.2.11: {}
+
+  isexe@2.0.0: {}
 
   jiti@2.6.1: {}
 
@@ -1062,6 +1130,8 @@ snapshots:
 
   ogl@1.0.11: {}
 
+  path-key@3.1.1: {}
+
   picocolors@1.1.1: {}
 
   postcss@8.4.31:
@@ -1075,6 +1145,20 @@ snapshots:
       nanoid: 3.3.11
       picocolors: 1.1.1
       source-map-js: 1.2.1
+
+  posthog-js@1.313.0:
+    dependencies:
+      '@posthog/core': 1.9.0
+      core-js: 3.47.0
+      fflate: 0.4.8
+      preact: 10.28.1
+      web-vitals: 4.2.4
+
+  posthog-node@5.18.1:
+    dependencies:
+      '@posthog/core': 1.9.0
+
+  preact@10.28.1: {}
 
   react-dom@19.2.3(react@19.2.3):
     dependencies:
@@ -1120,6 +1204,12 @@ snapshots:
       '@img/sharp-win32-x64': 0.34.5
     optional: true
 
+  shebang-command@2.0.0:
+    dependencies:
+      shebang-regex: 3.0.0
+
+  shebang-regex@3.0.0: {}
+
   source-map-js@1.2.1: {}
 
   styled-jsx@5.1.6(react@19.2.3):
@@ -1140,3 +1230,9 @@ snapshots:
   typescript@5.9.3: {}
 
   undici-types@6.21.0: {}
+
+  web-vitals@4.2.4: {}
+
+  which@2.0.2:
+    dependencies:
+      isexe: 2.0.0
