@@ -19,7 +19,7 @@ export default function EventCard({
 	time,
 }: EventCardProps) {
 	return (
-		<Link href={slug} id="event-card">
+		<Link href={`/events/${slug}`} id="event-card">
 			<Image
 				src={image}
 				alt={title}
