@@ -1,6 +1,6 @@
 import './globals.css'
 
-import Navbar from '@/components/nav-bar'
+import { Navbar } from '@/components/nav-bar'
 import LightRays from '@/components/ui/light-rays'
 import type { Metadata } from 'next'
 import { Martian_Mono, Schibsted_Grotesk } from 'next/font/google'

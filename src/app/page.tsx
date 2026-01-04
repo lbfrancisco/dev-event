@@ -1,5 +1,5 @@
-import EventCard from '@/components/event-card'
-import ExploreButton from '@/components/explore-button'
+import { EventCard } from '@/components/event-card'
+import { ExploreButton } from '@/components/explore-button'
 import type { IEvent } from '@/database'
 
 const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL
