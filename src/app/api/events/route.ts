@@ -1,6 +1,7 @@
 import { Event } from '@/database'
 import connectDB from '@/lib/mongodb'
 import { v2 as cloudinary } from 'cloudinary'
+import { revalidateTag } from 'next/cache'
 import { type NextRequest, NextResponse } from 'next/server'
 
 export async function POST(request: NextRequest) {
@@ -30,6 +31,9 @@ export async function POST(request: NextRequest) {
 			)
 		}
 
+		const tags = JSON.parse(data.get('tags') as string)
+		const agenda = JSON.parse(data.get('agenda') as string)
+
 		const arrayBuffer = await file.arrayBuffer()
 		const buffer = Buffer.from(arrayBuffer)
 
@@ -48,7 +52,13 @@ export async function POST(request: NextRequest) {
 
 		event.image = (uploadResult as { secure_url: string }).secure_url
 
-		const createdEvent = await Event.create(event)
+		const createdEvent = await Event.create({
+			...event,
+			tags,
+			agenda,
+		})
+
+		revalidateTag('events-data', 'max')
 
 		return NextResponse.json(
 			{ message: 'Event created successfully', event: createdEvent },
