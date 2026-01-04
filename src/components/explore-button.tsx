@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-export default function ExploreButton() {
+export function ExploreButton() {
 	return (
 		<button type="button" id="explore-btn" className="mt-7 mx-auto">
 			<Link href="#events">Explore Events</Link>

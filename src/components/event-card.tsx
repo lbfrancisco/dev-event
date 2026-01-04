@@ -10,7 +10,7 @@ interface EventCardProps {
 	time: string
 }
 
-export default function EventCard({
+export function EventCard({
 	slug,
 	title,
 	image,
